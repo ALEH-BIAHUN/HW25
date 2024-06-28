@@ -25,7 +25,7 @@ public class Main {
 
         Predicate<Integer> isAdult = (age) -> age >= 18;
 
-        System.out.println(man.getName() + " adult " + isAdult.test(man.getAge()));
-        System.out.println(woman.getName() + " adult " + isAdult.test(woman.getAge()));
+        System.out.println(man.getName() + " - " + (isAdult.test(man.getAge()) ? "is a legal adult" : "is not a legal adult"));
+        System.out.println(woman.getName() + " - " + (isAdult.test(woman.getAge()) ? "is a legal adult" : "is not a legal adult"));
     }
 }
